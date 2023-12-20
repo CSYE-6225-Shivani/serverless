@@ -144,7 +144,7 @@ def download_zip_file(url):
 # valid zip file url or not. If it is a valid zip file url, then it downloads the zip file and upload it to the
 # google cloud storage bucket using google private key passed through the environment variables, sends an email to the
 # user uploading the file by accessing the user's email id from the SNS message, and updates DynamoDB table with each sent email.
-# It also emails students if there is an issue with the submission url with the reason why the submission was not uploaded on google cloud
+# It also email students if there is an issue with the submission url with the reason why the submission was not uploaded on google cloud
 # storage bucket. For AWS, the credentials are provided by pulumi since we will be running this file as a part of pulumi
 
 def lambda_handler(event, context):

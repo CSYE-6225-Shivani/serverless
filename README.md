@@ -1,5 +1,5 @@
 # Cloud-Native Flask API on AWS using IaC
-This project exemplifies a backend-focused assignment management system, leveraging cloud technology for scalability and efficiency. Seamlessly executing CRUD operations, it ensures a dynamic and user-friendly experience. The system integrates with Google Cloud Platform (GCP) for secure student submission uploads to cloud storage and sends automated email notifications providing submission status updates to students.
+This project exemplifies a backend-focused assignment management system, leveraging cloud technology for scalability and efficiency. Seamlessly executing CRUD operations, it ensures a dynamic and user-friendly experience. The system integrates with Google Cloud Platform (GCP) for secure student submission uploads to cloud storage and sends automated email notifications providing submission status updates to student.
 
 ## About this repository
 The code in this repository runs as a part of pulumi build. It has a code for AWS lambda function. It gets triggered by SNS and then reads the message from SNS. The SNS sends message about what has been submitted by a student as a part of their submission and related assignment and student details. The lambda function processes this message and uploads student's submission to GCP storage bucket. It also sends the status of the submission (success or failure) to the email address associated with the student.
@@ -24,7 +24,7 @@ The code in this repository runs as a part of pulumi build. It has a code for AW
 | **CI/CD**                    | GitHub Actions                                          |
 | **Additional Tools**         | Mailgun, Google Cloud Platform (GCP)                     |
 
-## Read through [serverless.md](serverless.md/webapp.md) documentation for detailed information on usage of this repository
+## Read through [serverless.md](./serverless.md) documentation for detailed information on usage of this repository
 
 
 ## Setting up webapp, iac-pulumi, and serverless repositiories
